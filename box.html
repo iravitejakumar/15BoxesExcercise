@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>15 Boxes</title>
+    <link rel="stylesheet" type="text/css" href="boxes.css">
+    <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+
+<body background='http://pinbook.me/wp-content/uploads/2015/12/simplesoftyellowabstractlineshdbackground-14513378708lc4p.jpg'>
+    <div class='maincolumn'>
+        <div class='title'>15 boxes Excercise</div>
+        <div class='column1'>
+            <div class='box-style' name='box1' tabindex='0' onkeydown="fnKeyFunction(event,undefined,undefined,'box6','box2')">1</div>
+            <div class='box-style' name='box2' tabindex='0' onkeydown="fnKeyFunction(event,undefined,'box1','box7','box3')">2</div>
+            <div class='box-style' name='box3' tabindex='0' onkeydown="fnKeyFunction(event,undefined,'box2','box8','box4')">3</div>
+            <div class='box-style' name='box4' tabindex='0' onkeydown="fnKeyFunction(event,undefined,'box3','box9','box5')">4</div>
+            <div class='box-style' name='box5' tabindex='0' onkeydown="fnKeyFunction(event,undefined,'box4','box10',undefined)">5</div>
+        </div>
+        <div class='column2'>
+            <div class='box-style' tabindex='0' name='box6' onkeydown="fnKeyFunction(event,'box1',undefined,'box11','box7')">6</div>
+            <div class='box-style' tabindex='0' name='box7' onkeydown="fnKeyFunction(event,'box2','box6','box12','box8')">7</div>
+            <div class='box-style' tabindex='0' name='box8' onkeydown="fnKeyFunction(event,'box3','box7','box13','box9')">8</div>
+            <div class='box-style' tabindex='0' name='box9' onkeydown="fnKeyFunction(event,'box4','box8','box14','box10')">9</div>
+            <div class='box-style' tabindex='0' name='box10' onkeydown="fnKeyFunction(event,'box5','box9','box15',undefined)">10</div>
+        </div>
+        <div class='column3'>
+            <div class='box-style' tabindex='0' name='box11' onkeydown="fnKeyFunction(event,'box6',undefined,undefined,'box12')">11</div>
+            <div class='box-style' tabindex='0' name='box12' onkeydown="fnKeyFunction(event,'box7','box11',undefined,'box13')">12</div>
+            <div class='box-style' tabindex='0' name='box13' onkeydown="fnKeyFunction(event,'box8','box12',undefined,'box14')">13</div>
+            <div class='box-style' tabindex='0' name='box14' onkeydown="fnKeyFunction(event,'box9','box13',undefined,'box15')">14</div>
+            <div class='box-style' tabindex='0' name='box15' onkeydown="fnKeyFunction(event,'box10','box14',undefined,undefined)">15</div>
+        </div>
+    </div>
+    <div id='output'>
+        <div class='title'>Track your Event Here:</div>
+    </div>
+</body>
+<script type="text/javascript" src="boxes.js"></script>
+
+</html>
